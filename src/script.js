@@ -40,6 +40,8 @@ function s(n) {
 
 // Load config and count servers on page load
 window.onload = function () {
+    document.querySelector('#current-url').textContent = window.location.host;
+
     const servers = JSON.parse(localStorage.getItem('servers'));
     const config = JSON.parse(localStorage.getItem('config'));
     const updated = localStorage.getItem('serversUpdated');
@@ -172,7 +174,3 @@ function clearStorage() {
         stats2.textContent = '';
     }
 }
-
-window.onload = function () {
-    document.querySelector('#current-url').textContent = window.location.host;
-};
