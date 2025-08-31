@@ -58,10 +58,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                     <label for="searchTerm">Search:</label>
                 </div>
                 <div class="col-12 col-md-8 order-3 order-md-2">
-                    <input type="text" class="form-control" name="searchTerm" id="searchTerm" required />
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="searchTerm"
+                        id="searchTerm"
+                        required
+                    />
                 </div>
-                <div class="col-10 col-md-2 order-2 order-md-3 mb-2 mb-md-0" align="right">
-                    <button type="submit" class="btn btn-primary">Search</button>
+                <div
+                    class="col-10 col-md-2 order-2 order-md-3 mb-2 mb-md-0"
+                    align="right"
+                >
+                    <button type="submit" class="btn btn-primary">
+                        Search
+                    </button>
                 </div>
             </form>
 
@@ -91,11 +102,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <form id="aclForm">
                 <div class="row mb-3">
                     <div class="col-12 col-md-2">
-                        <label for="serverUrl" class="col-form-label">Server URL:</label>
+                        <label for="serverUrl" class="col-form-label"
+                            >Server URL:</label
+                        >
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="input-group">
-                            <label for="serverUrl" class="input-group-text">https://</label>
+                            <label for="serverUrl" class="input-group-text"
+                                >https://</label
+                            >
                             <input
                                 type="text"
                                 class="form-control"
@@ -110,7 +125,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
                 <div class="row mb-3">
                     <div class="col-12 col-md-2">
-                        <label for="accessToken" class="col-form-label">Access token:</label>
+                        <label for="accessToken" class="col-form-label"
+                            >Access token:</label
+                        >
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="input-group">
@@ -121,14 +138,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                 placeholder="syt_abcd"
                                 required
                             />
-                            <label for="isAdmin" class="input-group-text">Admin:</label>
+                            <label for="isAdmin" class="input-group-text"
+                                >Admin:</label
+                            >
                             <div class="input-group-text">
-                                <input class="form-check-input mt-0" type="checkbox" id="isAdmin" />
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="checkbox"
+                                    id="isAdmin"
+                                />
                             </div>
                         </div>
                         <div class="form-text">
-                            Can be for an admin user on the server or a normal user. For the latter, the user must be a
-                            member of all rooms below.
+                            Can be for an admin user on the server or a normal
+                            user. For the latter, the user must be a member of
+                            all rooms below.
                         </div>
                     </div>
                 </div>
@@ -136,7 +160,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 <div class="row mb-3">
                     <div class="col-12 col-md-10">
                         <label class="form-label" for="roomList"
-                            >List of Room IDs to fetch blocked servers from. Separated by a newline</label
+                            >List of Room IDs to fetch blocked servers from.
+                            Separated by a newline</label
                         >
                         <textarea
                             class="form-control monospace"
@@ -152,20 +177,34 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                     <div class="col-12 col-md-10 ms-2">
                         <div class="row justify-content-around">
                             <div class="col-6 col-sm-3 mb-2 mb-sm-0">
-                                <button type="submit" class="btn btn-primary">Query rooms</button>
+                                <button type="submit" class="btn btn-primary">
+                                    Query rooms
+                                </button>
                             </div>
                             <div class="col-6 col-sm-3">
-                                <button type="button" class="btn btn-secondary" onclick="clearForm()">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    onclick="clearForm()"
+                                >
                                     Clear form
                                 </button>
                             </div>
                             <div class="col-6 col-sm-3">
-                                <button type="button" class="btn btn-secondary" onclick="saveSettings()">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    onclick="saveSettings()"
+                                >
                                     Save Settings
                                 </button>
                             </div>
                             <div class="col-6 col-sm-3">
-                                <button type="button" class="btn btn-secondary" onclick="clearStorage()">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    onclick="clearStorage()"
+                                >
                                     Clear storage
                                 </button>
                             </div>
@@ -194,18 +233,30 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </div>
 
         <!-- About Modal -->
-        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div
+            class="modal fade"
+            id="aboutModal"
+            tabindex="-1"
+            aria-labelledby="aboutModalLabel"
+            aria-hidden="true"
+        >
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="aboutModalLabel">About</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col">
                                 <p>
-                                    The page is hosted with GitHub Pages. You can read their Privacy Policy
+                                    The page is hosted with GitHub Pages. You
+                                    can read their Privacy Policy
                                     <a
                                         href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
                                         target="_blank"
@@ -214,8 +265,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                     >.
                                 </p>
                                 <p>
-                                    Everything you input and all the work stays locally in your browser. No data is sent
-                                    to the server at <code><span id="current-url"></span></code>.
+                                    Everything you input and all the work stays
+                                    locally in your browser. No data is sent to
+                                    the server at
+                                    <code><span id="current-url"></span></code>.
                                 </p>
 
                                 <p>
@@ -236,7 +289,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                 <ul>
                                     <li>
                                         Theme by
-                                        <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"
+                                        <a
+                                            href="https://getbootstrap.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             >Bootstrap</a
                                         >
                                         used under the terms of
@@ -259,16 +315,24 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                         Search for blocked Matrix servers<br />
                                         Copyright (C) 2022 Twilight Sparkle
                                         <br /><br />
-                                        This program is free software: you can redistribute it and/or modify it under
-                                        the terms of the GNU Affero General Public License as published by the Free
-                                        Software Foundation, either version 3 of the License, or (at your option) any
+                                        This program is free software: you can
+                                        redistribute it and/or modify it under
+                                        the terms of the GNU Affero General
+                                        Public License as published by the Free
+                                        Software Foundation, either version 3 of
+                                        the License, or (at your option) any
                                         later version.
                                         <br /><br />
-                                        This program is distributed in the hope that it will be useful, but WITHOUT ANY
-                                        WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-                                        PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+                                        This program is distributed in the hope
+                                        that it will be useful, but WITHOUT ANY
+                                        WARRANTY; without even the implied
+                                        warranty of MERCHANTABILITY or FITNESS
+                                        FOR A PARTICULAR PURPOSE. See the GNU
+                                        Affero General Public License for more
+                                        details.
                                         <br /><br />
-                                        You should have received a copy of the GNU Affero General Public License along
+                                        You should have received a copy of the
+                                        GNU Affero General Public License along
                                         with this program. If not, see
                                         <a
                                             href="https://www.gnu.org/licenses/"
@@ -282,7 +346,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
