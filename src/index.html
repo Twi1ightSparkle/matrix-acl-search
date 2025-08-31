@@ -1,6 +1,6 @@
 <!--
 Search for blocked Matrix servers
-Copyright (C) 2022  Twilight Sparkle
+Copyright (C) 2025  Twilight Sparkle
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
@@ -280,6 +280,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                         >GitHub</a
                                     >.
                                 </p>
+                                <p>
+                                    See my privacy policy
+                                    <a
+                                        href="https://twilightsparkle.dev/privacy/policy.html"
+                                        >here</a
+                                    >.
+                                </p>
+                                <div id="matomo-opt-out"></div>
+                                <br />
                             </div>
                         </div>
 
@@ -313,7 +322,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                 <p>
                                     <small>
                                         Search for blocked Matrix servers<br />
-                                        Copyright (C) 2022 Twilight Sparkle
+                                        Copyright (C) 2025 Twilight Sparkle
                                         <br /><br />
                                         This program is free software: you can
                                         redistribute it and/or modify it under
@@ -360,5 +369,26 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
         <script src="./bootstrap.bundle.min.js"></script>
         <script src="./script.js"></script>
+
+        <!-- Analytics -->
+        <script src="https://twilightsparkle.dev/privacy/opt-out.js"></script>
+        <script>
+            var _paq = (window._paq = window._paq || []);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                _paq.push([
+                    'setTrackerUrl',
+                    'https://analytics.twilightsparkle.dev/matomo.php',
+                ]);
+                _paq.push(['setSiteId', '7']);
+            })();
+        </script>
+        <script
+            async
+            defer
+            src="https://analytics.twilightsparkle.dev/matomo.js"
+        ></script>
+        <!-- Analytics -->
     </body>
 </html>
